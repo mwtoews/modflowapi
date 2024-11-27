@@ -3,7 +3,7 @@ import pandas as pd
 import xmipy.errors
 
 
-class ListInput(object):
+class ListInput:
     """
     Data object for storing pointers and working with list based input data
 
@@ -554,7 +554,7 @@ class ArrayInput:
             raise KeyError(f"{item} is not a valid variable name for this package")
 
 
-class AdvancedInput(object):
+class AdvancedInput:
     """
     Data object for dynamically storing pointers and working with
     "advanced" data types

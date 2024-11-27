@@ -39,7 +39,7 @@ def update_version_py(timestamp: datetime, version: Version):
 
 
 def update_citation_cff(version: Version):
-    lines = open(_citation_cff_path, "r").readlines()
+    lines = open(_citation_cff_path).readlines()
     with open(_citation_cff_path, "w") as f:
         for line in lines:
             if line.startswith("version:"):

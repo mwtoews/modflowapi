@@ -1,3 +1,5 @@
+from typing import Optional
+
 from xmipy import XmiWrapper
 
 from .util import amend_libmf6_path
@@ -17,7 +19,7 @@ class ModflowApi(XmiWrapper):
     def __init__(
         self,
         lib_path: str,
-        lib_dependency: str = None,
+        lib_dependency: Optional[str] = None,
         working_directory: str = ".",
         timing: bool = False,
     ):
